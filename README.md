@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/capybara-rack_test-screenshot.svg)](https://rubygems.org/gems/capybara-rack_test-screenshot)
+
 # Generate screenshots with RackTest
 
 Makes `save_screenshot` behave as if you were using a regular browser when using `rack` as your Capybara driver.
