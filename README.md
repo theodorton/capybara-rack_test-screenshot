@@ -43,7 +43,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 You'll need to configure `Capybara.asset_host` in order for Playwright to render the page properly. This should point to a running development server of your application.
 
 ```rb
-Capybara.asset_host = "http://localhost:3000
+Capybara.asset_host = "http://localhost:3000"
 ```
 
 Optional settings:
