@@ -18,15 +18,10 @@ RSpec.configure do |config|
       puts "Screenshot at #{path}"
     end
   end
-
-  # Or for Rails projects
-  config.after(:each) do |example|
-    if example.exception
-      take_screenshot(screenshot: 'inline')
-    end
-  end
 end
 ```
+
+Also makes failing Rails System tests behave the same between `rack` and JS drivers.
 
 ## Installation
 
