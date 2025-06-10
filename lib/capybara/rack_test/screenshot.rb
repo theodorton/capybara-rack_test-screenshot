@@ -105,3 +105,9 @@ end
 if defined?(Rails)
   require_relative 'screenshot/railtie'
 end
+
+if defined?(Capybara::Screenshot)
+  Capybara::Screenshot.register_driver(:rack_test) do |driver, path|
+    driver.save_screenshot(path)
+  end
+end
