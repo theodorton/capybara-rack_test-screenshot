@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [0.1.2] - 2025-08-07
+
+- Make sure default playwright version is compatible with the Ruby client
+
 ## [0.1.1] - 2025-06-10
 
 - Add compatibility with `capybara-screenshot` gem
