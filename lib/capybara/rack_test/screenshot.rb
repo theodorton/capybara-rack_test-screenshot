@@ -67,7 +67,10 @@ module Capybara
         end
 
         def playwright_cli_executable_path
-          ENV['PLAYWRIGHT_CLI_EXE_PATH'] || 'npx playwright'
+          ENV['PLAYWRIGHT_CLI_EXE_PATH'] || begin
+            version = Gem::Version.create(Playwright::COMPATIBLE_PLAYWRIGHT_VERSION)
+            "npx playwright@#{version.release}"
+          end
         end
 
         def ensure_asset_host!
