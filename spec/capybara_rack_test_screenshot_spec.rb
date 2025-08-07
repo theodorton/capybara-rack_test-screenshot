@@ -85,4 +85,8 @@ RSpec.describe Capybara::RackTest::Screenshot, type: :feature do
 
     expect(Process::Status.wait(pid)).to be_success
   end
+
+  it 'can preload a browser instance without crashing' do
+    expect { Capybara::RackTest::Screenshot.preload! }.not_to raise_error
+  end
 end

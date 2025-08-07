@@ -1,8 +1,13 @@
 ## [Unreleased]
 
+## [0.1.3] - 2025-08-07
+
+- Fix regression in 0.1.3
+- Make sure default playwright version is compatible with the Ruby client
+
 ## [0.1.2] - 2025-08-07
 
-- Make sure default playwright version is compatible with the Ruby client
+Yanked
 
 ## [0.1.1] - 2025-06-10
 
